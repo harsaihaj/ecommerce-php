@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-buttons {
+  margin-left: 50%;
+}
+
+
+
+
+
+
+h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2{
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+h4{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+h5{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+h6{
+  color: #D8D8D8;
+}
+
+.navbar{
+  font-size: 16px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  left: 0;
+  top: 0;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-light .navbar-nav .nav-link{
+  padding: 0 20px;
+  color: #000;
+  transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active
+.navbar i:hover {
+  color: coral;
+}
+
+.navbar i{
+  font-size: 1.2rem;
+  padding: 0 0.7px;
+  transition: 0.4s ease;
+  cursor:pointer;
+  margin-left: 5px;
+  margin-top: 7px;
+
+}
+
+@media only screen and (max-width:990px){
+  .nav-buttons{
+    margin : 10px;
+  }
+}
+
+#home{
+  background-image: url('../imgs/back.png');
+  width: 1500px;
+  height: 100vh;
+  background-size:cover;
+  background-position-x: 90px;
+  background-position-y: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#home span{
+  color: coral;
+}
+
+/* CSS for the button */
+button {
+  background-color: black;
+  color: coral;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: coral;
+  color: black;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+#new .one img{
+  width: 100%;
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#new .one{
+  position: relative;
+
+}
+
+#new .one .details{
+  position: absolute;
+  top:0;
+  left: 0;
+  color: burlywood;
+  font-weight: bold;
+  transition: 0.4s ease;
+  opacity: 0.9;
+  background-color: rgb(1,1,1);
+  width: 100%;
+  height:100%;
+}
+
+#new .one .details:hover{
+  background-color: cornsilk;
+  opacity: 0.8;
+}
+
+#new .one:nth-child(1) .details {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
+  width: 100%;
+  height: 100%;
+}
+
+#new .one:nth-child(2) .details {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
+  width: 100%;
+  height: 100%;
+}
+
+#new .one:nth-child(3) .details {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center items vertically */
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust background color and opacity */
+  width: 100%;
+  height: 100%;
+}
+
+/* Product */
+.product{
+  cursor:pointer;
+  margin-bottom: 2rem;
+}
+
+.product img{
+  transition: 0.3s all;
+}
+
+.product:hover img {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.navbar img {
+  max-width: 300px; /* Adjust the maximum width as needed */
+}
+
+#featured{
+  padding-top: 10px;
+}
+
+.small-img-group{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.small-img-col{
+  flex-basis: 50%;
+  cursor: pointer;
+}
+
+.single-product input{
+width: 50px;
+height: 40px;
+padding-left: 10px;
+font-size: 16px;
+margin-right: 10px;
+}
+
+.single-product input:focus{
+outline: none;
+}
+
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart .product-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cart th {
+  text-align: left;
+  padding: 5px 10px;
+  color: white;
+  background-color: coral;
+}
+
+.cart td{
+  padding: 10px 20px;
+
+}
+
+.cart .remove-btn{
+  color: coral;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: white;
+  border: none;
+
+}
+
+.cart .edit-btn{
+  color: coral;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: white;
+  border: none;
+  width: 100%;
+
+}
+
+.cart td img{
+  width: 80px;
+  height: 90px;
+  margin-right: 10px;
+}
+
+
+
+
+.cart input{
+  width: 50px;
+  height: 40px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  }
+
+  .cart-total{
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  .cart-total table{
+    width: 100%;
+    max-width: 500px;
+    border-top: 3px solid coral;
+  }
+
+  td:last-child{
+    text-align: right;
+  }
+  th:last-child{
+    text-align: right;
+  }
+
+  .checkout-container{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .checkout-btn{
+
+    background-color: coral;
+    color: white;
+  }
+
+  #login-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid coral;
+  }
+
+  #login-form input{
+    width: 50%;
+    margin: 5px auto;
+  }
+
+  #login-form #login-btn{
+    background-color: coral;
+    color: white;
+
+  }
+
+  #login-form #register-url{
+    color: coral;
+  }
+
+
+
+
+  #register-form{
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid coral;
+  }
+
+  #register-form input{
+    width: 50%;
+    margin: 5px auto;
+  }
+
+  #register-form #register-btn{
+    background-color: coral;
+    color: white;
+
+  }
+
+  #register-form #login-url{
+    color: coral;
+  }
+
+
+  #logintext{
+    text-align: center;
+  }
+
+  #account-form{
+    width: 50%;
+    margin: 35px auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  #account-form input{
+    margin: 5px auto;
+  }
+
+
+
+  #account-form #change-pass-btn{
+    color: white;
+    background-color: coral;
+  }
+
+  .account-info #orders-btn,#logout-btn{
+    color: coral;
+    text-decoration: none;
+  }
+
+
+
+#checkout-form .checkout-small-element{
+  display: inline-block;
+  width: 48%;
+  margin: 10px auto;
+}
+
+#checkout-form .checkout-large-element{
+width: 95%;
+}
+
+#checkout-form .checkout-btn-container{
+margin: 10px;
+text-align: right;
+margin-right: 40px;
+}
+
+
+#checkout-form #checkout-btn{
+  color: white;
+  background-color: coral;
+}
+
+#contact span{
+  color: coral;
+}
+
+.orders table {
+  width: 100%; /* Set the table width to 100% */
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+.orders th,
+.orders td {
+  padding: 10px; /* Add padding to table cells */
+  border: 1px solid #ddd; /* Add borders to table cells */
+}
+
+.orders th {
+  background-color: #f2f2f2; /* Background color for table header */
+}
+
+.orders .order-details-btn{
+  color:white;
+  background-color: coral;
+}
+
+
+/* Adjust the width of the search section */
+#search {
+  width: 50%; /* Make the search section take half of the screen width */
+}
+
+/* Center the search section horizontally */
+#search {
+  margin: 0 auto;
+}
+
+
+#paypal-button-container{
+display: flex;
+}
+
+.cart-quantity{
+  background: coral;
+  color: white;
+  padding: 2px 5px;
+  border-radius: 50%;
+  margin: -2px;
+  font-size : 1rem;
+}
